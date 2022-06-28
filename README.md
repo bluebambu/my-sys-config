@@ -111,6 +111,8 @@ Save this to `my-cfg.terminal`, and use `Terminal` to import it.
 	</data>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0699999999999998</real>
+	<key>RestoreLines</key>
+	<integer>30000</integer>
 	<key>TextBoldColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -157,8 +159,12 @@ Save this to `my-cfg.terminal`, and use `Terminal` to import it.
 	ADcASQBMAFEAUwBaAGAAawB4AH4AiwCgAKcA0gD8AP4BAAECAQkBDwEZARsBHQEfAzsD
 	QANLA1QDYQNkA3EDegN/A4cAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADig==
 	</data>
+	<key>columnCount</key>
+	<integer>120</integer>
 	<key>name</key>
 	<string>xiang</string>
+	<key>rowCount</key>
+	<integer>35</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>
