@@ -54,6 +54,8 @@ set -o vi
 ```
 
 ### terminal setup ####
+Save this to `my-cfg.terminal`, and use `Terminal` to import it. 
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
