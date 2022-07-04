@@ -34,10 +34,12 @@ zstyle ':vcs_info:git:*' formats '%b'
 # Set up the prompt (with git branch name)
 # set color:   %{$fg[blue]%} - blue, %{$fg[green]%} - green, etc...
 setopt PROMPT_SUBST
-PROMPT='@%m %{$fg[green]%}${PWD/#$HOME/~} %{$fg[blue]%}{${vcs_info_msg_0_}}%{$fg[red]%}>'
+# vcs_info_msg is a built-in zsh function
+# %3~ is only showing last 3 folder in PWD with ~(HOME) format. 
+PROMPT='@%m %{$fg[green]%}%3~ %{$fg[blue]%}{${vcs_info_msg_0_}}%{$fg[red]%}>'
 ###################################
 
-### ls color ###
+### enable ls to have color ###
 export CLICOLOR=1
 ###############
 
