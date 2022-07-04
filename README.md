@@ -17,9 +17,18 @@ final:
 ```zsh
 ##################################
 
+
+######### use autosuggestion & syntax highlight
 autoload colors && colors
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# autoload compinit && compinit
+
+###########################################
+
+## enable prefix history search!! ###
+# https://unix.stackexchange.com/questions/97843/how-can-i-search-history-with-text-already-entered-at-the-prompt-in-zsh
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+#####
 
 ######## setup git branch name #####
 # Load version control information
@@ -33,15 +42,18 @@ zstyle ':vcs_info:git:*' formats '%b'
 # export PS1="%n@%m:%~%# "
 # Set up the prompt (with git branch name)
 # set color:   %{$fg[blue]%} - blue, %{$fg[green]%} - green, etc...
+# set shortened prompt:  %3~ - based on '~', only show latest 3 layers of directory. example:  a/b/c, ~/d/e, etc... 
 setopt PROMPT_SUBST
-# vcs_info_msg is a built-in zsh function
-# %3~ is only showing last 3 folder in PWD with ~(HOME) format. 
-PROMPT='@%m %{$fg[green]%}%3~ %{$fg[blue]%}{${vcs_info_msg_0_}}%{$fg[red]%}>'
+PROMPT='@%m %{$fg[green]%}%3~ %{$fg[cyan]%}{${vcs_info_msg_0_}}%{$fg[red]%}>'
 ###################################
 
-### enable ls to have color ###
+### ls color ###
 export CLICOLOR=1
 ###############
+
+############# enable autosuggest && syntax highlighter ####
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 ################ my custom zshrc ########
