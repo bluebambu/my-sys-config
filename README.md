@@ -219,7 +219,7 @@ unbind '"'
 unbind %
 
 # switch panes using Alt-arrow without prefix
-# M is Meta, which is usually your Alt key.
+# M is Meta, which is usually your Alt key. Remember to go to "Preference" of Mac Terminal to enable "use Option as Meta key"!!
 bind -n M-Left select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
